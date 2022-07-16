@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    position: relative;
+    background-color: #324144;
+    font-family: 'roboto', sans-serif;
+}
+
+.design{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #DEEFF3;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+h4{
+    margin: 15px 5px;
+}
+
+.logo{
+   
+    height: 50px;
+    margin: -5px 10px 0;
+}
+.search-box{
+    position: relative;
+    max-width: 500px;
+    width: 50%;
+    height: 35px;
+    display: flex;
+}
+.search-bar{
+    width: 85%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+} 
+.search-btn{
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+}
+
+.search-btn img{
+   width: 50%;
+ height: 100%;
+} 
+
+.user{
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    cursor: pointer;
+}
+.icon1{
+    width: 30px;
+    height: 30px;
+}
+.userdp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin-left: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.userdp img{
+    width: 30px;
+    height: 30px;
+}
+.homepage{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-height: 250px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background-color: #5A909B;
+    padding-right: 10px;
+}
+
+.links{
+    display: block;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+   
+}
+.homepage img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.links:hover{
+    background: beige;
+}
+.seperator{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+.content{
+    position: fixed;
+    left: 250px;
+    top: 60px;
+    width: 100%;
+    margin-left: 0px;
+    height: 60px;
+    background-color: #b0dad2;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-options{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #FBEEE6;
+    border: 1px solid bisque;
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.filter-options.active{
+    color: white;
+    background-color: #273746;
+}
+.videos{
+    width: 100%;
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+   
+}
+.display-videos{
+    min-height: 250px;
+    height: auto;
+}
+.alter{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.video-content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.channel-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.title{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+.channel-name{
+    font-size: 14px;
+    margin: 2px 0px;
+    color: #979797;
+}
